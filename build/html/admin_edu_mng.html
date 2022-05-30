@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">교육안내자료 관리</h3>
+                <div class="btnFuncArea">
+                    <button class="btn default"><span>삭제</span></button>
+                    <button class="btn confirm"><span>등록</span></button>
+                </div>
+
+                <!-- codeSelect -->
+                <div class="codeSelect">
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="s01">구분</label>
+                        </p>
+                        <select class="select type02" id="s01">
+                            <option>제목</option>
+                        </select>
+                        <label>
+                            <input type="text" placeholder="검색어를 입력하세요." style="width: 220px;">
+                        </label>
+                    </div>
+                    <!-- //selectList -->
+                    <button class="btnMember right">검색</button>
+                </div>
+                <!-- //codeSelect -->
+
+                <!-- table -->
+                <div class="table overflow-xy" style="height: 500px;">
+                    <table style="width: 1000px;">
+                        <caption>교육관리 테이블</caption>
+                        <colgroup>
+                            <col style="width: 80px;"/>
+                            <col style="width: auto;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: 120px;"/>
+                        </colgroup>
+                        <thead>
+                            <tr class="txt-left">
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">첨부</th>
+                                <th scope="col">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>32691</td>
+                                <td>건설기술자 15차 교육 자료 (공간정보표준)</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-11-30</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-10-27</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적 관계 법규 4기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-10-20</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 안내</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-10-19</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적 관계법규 4기 안내</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-10-10</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td class="ep">
+                                    건설기술자 전문교육 (공간정보 및 응용측량(B)) 시간표 및 건설기술자 전문교육 시간표 및 건물기술자
+                                    건설기술자 전문교육 (공간정보 및 응용측량(B)) 시간표 및 건설기술자 전문교육 시간표 및 건물기술자
+                                </td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-fileDown center"></i>
+                                </td>
+                                <td>2017-09-15</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적 관계 법규 3기 교육안내자료 및 시간표</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-jpg center"></i>
+                                </td>
+                                <td>2017-09-11</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>Smart infra & Geoinnovation 2016 MMS와 고정밀 3차원</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-png center"></i>
+                                </td>
+                                <td>2016-03-28</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>건설기술자 15차 교육 자료 (공간정보 표준)</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-hwp center"></i>
+                                </td>
+                                <td>2017-11-30</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-pdf center"></i>
+                                </td>
+                                <td>2017-10-27</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-pdf center"></i>
+                                </td>
+                                <td>2017-10-27</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-pdf center"></i>
+                                </td>
+                                <td>2017-10-27</td>
+                            </tr>
+
+                            <tr>
+                                <td>32691</td>
+                                <td>지적의 역사 3기 교육 사진</td>
+                                <td>관리자</td>
+                                <td>
+                                    <i class="ico ico-pdf center"></i>
+                                </td>
+                                <td>2017-10-27</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

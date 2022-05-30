@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">업체접수 관리</h3>
+                <div class="btnFuncArea">
+                    <button class="btn confirm"><span>입회접수</span></button>
+                </div>
+
+                <!-- codeSelect -->
+                <div class="codeSelect">
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="s01">접수년도</label>
+                        </p>
+                        <select class="select type02" id="s01">
+                            <option>2021</option>
+                        </select>
+                    </div>
+                    <!-- //selectList -->
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="s02">관련기관</label>
+                        </p>
+                        <select class="select type02" id="s02">
+                            <option label="제목"></option>
+                        </select>
+                    </div>
+                    <!-- //selectList -->
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="i01">접수번호</label>
+                        </p>
+                        <input type="text" style="width: 140px;" id="i01"/>
+                    </div>
+                    <!-- //selectList -->
+                    <button class="btnMember right">조회</button>
+                </div>
+                <!-- //codeSelect -->
+
+                <!-- table -->
+                <div class="table overflow-xy" style="height: 500px;">
+                    <table style="width: 1000px;">
+                        <caption>업체접수 관리 테이블</caption>
+                        <colgroup>
+                            <col style="width: 87px;"/>
+                            <col style="width: 105px;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: auto;"/>
+                            <col style="width: 87px;"/>
+                            <col style="width: 87px;"/>
+                            <col style="width: 222px;"/>
+                        </colgroup>
+                        <thead>
+                            <tr class="txt-left">
+                                <th scope="col" class="align p0">접수일자</th>
+                                <th scope="col">접수구분</th>
+                                <th scope="col">신청구분</th>
+                                <th scope="col">문서번호</th>
+                                <th scope="col">관련기관</th>
+                                <th scope="col">접수번호</th>
+                                <th scope="col">문서제목</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>신규등록</td>
+                                <td>팩스</td>
+                                <td>(주)씨에스 개발컨설팅</td>
+                                <td>서울특별시청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>(주)씨에스 개발컨설팅</td>
+                            </tr>
+                            
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>해산 및 폐업신고</td>
+                                <td>방문</td>
+                                <td>현대측량토목설계</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>현대측량토목설계</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>신규등록</td>
+                                <td>팩스</td>
+                                <td>현대측량</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>현대측량</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항 변경</td>
+                                <td>팩스</td>
+                                <td>(주)정인 지아이에스</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>(주)정인 지아이에스</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항 변경</td>
+                                <td>방문</td>
+                                <td>아이맵</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>아이맵</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항 변경</td>
+                                <td>방문</td>
+                                <td>(주)지오스마트</td>
+                                <td>전라남도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>(주)지오스마트</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>신규등록</td>
+                                <td>방문</td>
+                                <td>(주)더수이앤씨</td>
+                                <td>전라남도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>(주)더수이앤씨</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>(주)지에스드론</td>
+                                <td>충청남도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>(주)지에스드론</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>세라엔지니어링</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>세라엔지니어링</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>세라엔지니어링</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>세라엔지니어링</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>세라엔지니어링</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>세라엔지니어링</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>세라엔지니어링</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>세라엔지니어링</td>
+                            </tr>
+
+                            <tr>
+                                <td>2008/08/06</td>
+                                <td>기본사항변경</td>
+                                <td>팩스</td>
+                                <td>세라엔지니어링</td>
+                                <td>경기도청</td>
+                                <td class="txtGrey">ETP0036535</td>
+                                <td>세라엔지니어링</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

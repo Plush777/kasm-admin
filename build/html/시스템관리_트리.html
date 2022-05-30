@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+    <style>
+        .textInfo{
+            margin-top:50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            font-size:15px;
+            font-family: "Noto Sans Light";
+        }
+        .textInfo p:first-child{color:#858585;}
+        .textInfo p:first-child span{color:#353990;}
+        .textInfo p:last-child{color:#b4b4b4;}
+        .treeArea{
+            margin-top:14px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .treeArea .column{
+            width:465px;
+            height:700px;
+            overflow: auto;
+            padding:30px 20px;
+            border: solid 1px #dbdbdb;
+            background-color: #f9f9f9;
+            box-sizing: border-box;
+        }
+        .treeArea .column .ztree{width:100%;height:100%;}
+    </style>
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">메뉴별 권한기능 부여관리</h3>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: true,
+                                autoCheckTrigger: true
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"최상위메뉴", open:true, children: [
+                                    {name: "시스템 사용권한신청", children: [
+                                            {name: "경력 신고절차 안내 - 경력신고 절차 안내" },
+                                            {name: "경력 신고 - 경력신고"},
+                                            {name: "경력 신고 현황 · 경력 신고 현황"}
+                                        ]},
+                                    { "name":"경력 관리 - 경력 관리", children: [
+                                            {name: "child 01" },
+                                            {name: "child 02"}
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+                    var zTreeObj2,
+                        setting2 = {
+                            view: {
+                                selectedMulti: false
+                            },
+                            check: {
+                                enable: true,
+                                autoCheckTrigger: true
+                            }
+                        },
+                        zTreeNodes2 = [
+                            {"name":"Site Map", open:true, icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                    {name: "pNode 01", icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                            {name: "child 01", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                            {name: "child 02", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                        ]},
+                                    { "name":"baidu", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                    { "name":"sina", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                ]
+                            }
+                        ];
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                        zTreeObj2 = $.fn.zTree.init($("#tree2"), setting2, zTreeNodes2);
+                    });
+                </script>
+
+                <div class="textInfo">
+                    <p>선택된 권한코드 : <span>ROLE_ASO30</span></p>
+                    <p>※ 메뉴를 클릭하면 기능목록을 해당 권한에 부여할수 있습니다.</p>
+                </div>
+                <div class="treeArea">
+                    <div class="column">
+                        <ul id="tree1" class="ztree"></ul>
+                    </div>
+                    <div class="column">
+                        <ul id="tree2" class="ztree"></ul>
+                    </div>
+                </div>
+                <div class="btnArea right">
+                    <button class="btn etc default"><span>저장</span></button>
+                </div>
+
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

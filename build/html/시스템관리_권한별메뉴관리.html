@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">권한별 메뉴관리</h3>
+                <div class="textInfo" style="font-size: 13px;">
+                    <p>선택된 권한코드 : <span>ROLE_ANONYMOUS</span></p>
+                    <div style="display: flex;">
+                        <p style="margin-right: 20px;">※ 권한을 선택하면 해당권한의 메뉴를 생성할 수 있습니다.</p>
+                        <p>※ 상위 권한에 설정된 메뉴의 권한의 메뉴로 상속됩니다.</p>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: false,
+                                autoCheckTrigger: false
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"최상위메뉴", open:true, children: [
+                                    {name: "시스템 사용권한신청", children: [
+                                            {name: "child 01"},
+                                            {name: "child 02"},
+                                        ]},
+                                    { "name":"경력 관리 - 경력 관리", open:true, children: [
+                                            {name: "경력 신고절차 안내 - 경력신고 절차 안내" },
+                                            {name: "경력 신고 - 경력신고"},
+                                            {name: "경력 신고 현황 · 경력 신고 현황"},
+                                            {name: "업체 경력 신고 승인 - 업체 경력 신고 승인" },
+                                            {name: "경력 경정 신청 - 경력 경정 신청"},
+                                            {name: "제3자 정보제공 동의 - 제3자 정보 제공 동의"},
+                                            {name: "회비 납부 - 회비 납부 - 개인 회원 회비관리"}
+                                        ]},
+                                    {name: "증명서 발금신청 - 증명서 발금신청", open:true, children: [
+                                            {name: "증명서 발금 신청 · 증명서 발금 신청"},
+                                            {name: "증명서 결제 · 증명서 결제"},
+                                            {name: "증명서 발급현황 출력 · 증명서 발급현황 출력"},
+                                        ]},
+                                    {name: "회비관리 - 회비 관리", open:true, children: [
+                                            {name: "회비 납부 - 회비 납부"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "측량 용역사업 관리 - 측량 용역 사업 관리 발주기관", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                        ]},
+                                    {name: "업체 정보", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+                         var zTreeObj2,
+                            setting2 = {
+                                view: {
+                                    selectedMulti: false
+                                },
+                                check: {
+                                    enable: false,
+                                    autoCheckTrigger: false
+                                }
+                            },
+                            zTreeNodes2 = [
+                                {"name":"권한목록", open:true, children: [
+                                        {name: "모든사용자", open:true, children: [
+                                                {name: "미로그인한사용자"},
+                                            ]},
+                                        { "name":"로그인한사용자", open:true, children: [
+                                                { "name":"권한승인이필요한사용자", open:true, children: [
+                                                        { "name":"권한승인이후", open:true, children: [
+                                                                {name: "비회원업체 담당자" },
+                                                                {name: "회원업체담당자" },
+                                                                {name: "발주기관" },
+                                                                {name: "개인회원" },
+                                                                {name: "측량업등록기관" },
+                                                        ]},
+                                                        { "name":"권한승인이전", open:true, children: [
+                                                                {name: "협회권한승인대기자" },
+                                                                {name: "엄체권한승인대기자" },
+                                                                {name: "발주기관권한승인대기자" },
+                                                                {name: "측량업등록기관권한승인대기자" },
+                                                        ]},
+                                                ]},
+                                                { "name":"권한승인이필요없는사용자", open:true, children: [
+                                                        {name: "협회담당자1" },
+                                                        {name: "협회담당자2" },
+                                                        { "name":"시스템관리자", open:true, children: [
+                                                                {name: "TESTCODE" },
+                                                        ]},
+                                                ]},
+                                            ]},
+                                    ]
+                                },
+
+                            ];
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                        zTreeObj2 = $.fn.zTree.init($("#tree2"), setting2, zTreeNodes2);
+                    });
+                    //출처: https://lee-mandu.tistory.com/507 [개발/일상_Mr.lee]
+                </script>
+                <!--treeArea-->
+                <div class="treeArea" style="margin-top: 10px;">
+                    <div class="column" style="background: #f9f9f9;">
+                        <ul id="tree1" class="ztree"></ul>
+                    </div>
+                    <div class="column" style="background: #f9f9f9;">
+                        <ul id="tree2" class="ztree"></ul>
+                    </div>
+                </div>
+                <!--//treeArea-->
+                <!--btnArea-->
+                <div class="btnArea right">
+                    <button class="btn default"><span>저장</span></button>
+                </div>
+                <!--//btnArea-->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

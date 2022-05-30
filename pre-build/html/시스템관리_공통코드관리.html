@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">공통코드관리</h3>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: false,
+                                autoCheckTrigger: false
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"최상위메뉴", open:true, children: [
+                                    {name: "시스템 사용권한신청", children: [
+                                            {name: "경력 신고절차 안내 - 경력신고 절차 안내" },
+                                            {name: "경력 신고 - 경력신고"},
+                                            {name: "경력 신고 현황 · 경력 신고 현황"}
+                                        ]},
+                                    { "name":"경력 관리 - 경력 관리", children: [
+                                            {name: "child 01" },
+                                            {name: "child 02"}
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+                    var zTreeObj2,
+                        setting2 = {
+                            view: {
+                                selectedMulti: false
+                            },
+                            check: {
+                                enable: false,
+                                autoCheckTrigger: false
+                            }
+                        },
+                        zTreeNodes2 = [
+                            {"name":"Site Map", open:true, icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                    {name: "pNode 01", icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                            {name: "child 01", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                            {name: "child 02", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                        ]},
+                                    { "name":"baidu", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                    { "name":"sina", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                ]
+                            }
+                        ];
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                        zTreeObj2 = $.fn.zTree.init($("#tree2"), setting2, zTreeNodes2);
+                    });
+                    //출처: https://lee-mandu.tistory.com/507 [개발/일상_Mr.lee]
+                </script>
+
+                <!-- codeSelect -->
+                <div class="codeSelect clearFix">
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <label for="sel01" class="name">사용구분</label>
+                        <select id="sel01" class="select type02">
+                            <option>전체</option>
+                        </select>
+                    </div>
+                    <!-- //selectList -->
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <select class="select type02">
+                            <option>코드명</option>
+                        </select>
+                        <label>
+                            <input type="text" placeholder="검색어를 입력하세요." style="width: 220px;"/>
+                        </label>
+                        
+                    </div>
+                    <!-- //selectList -->
+
+                    <div class="btnArea" style="display: inline-flex;margin: 0 0 0 30px;float: right;">
+                        <button class="btnMember">재설정</button>
+                        <button class="btnMember" style="margin-left: 5px;">검색</button>
+                    </div>
+                </div>
+                <!-- //codeSelect -->
+
+                <div class="treeArea">
+                    <div class="column" style="padding: 0;">
+                        <!--table-->
+                        <div class="table" style="margin: 0;border:0;">
+                            <table style="width: 1000px;">
+                                <caption>업체접수 관리 테이블</caption>
+                                <colgroup>
+                                    <col style="width: 40px;">
+                                    <col style="width: 150px;">
+                                    <col style="width: 160px;">
+                                    <col style="width: 130px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr class="txt-left">
+                                        <th scope="col" class="txt-center">
+                                            <div class="checkBox">
+                                                <input type="checkBox" id="chk01" class="hidden">
+                                                <label for="chk01"></label>
+                                            </div>
+                                        </th>
+                                        <th scope="col" class="txt-center">코드</th>
+                                        <th scope="col">코드명</th>
+                                        <th scope="col">코드설명</th>
+                                        <th scope="col">사용자</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk02" class="hidden">
+                                            <label for="chk02"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul id="tree1" class="ztree"></ul>
+                                    </td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk03" class="hidden">
+                                            <label for="chk03"></label>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <ul id="tree2" class="ztree"></ul>
+                                    </td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk04" class="hidden">
+                                            <label for="chk04"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk05" class="hidden">
+                                            <label for="chk05"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk06" class="hidden">
+                                            <label for="chk06"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk07" class="hidden">
+                                            <label for="chk07"></label>
+                                        </div>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk08" class="hidden">
+                                            <label for="chk08"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk09" class="hidden">
+                                            <label for="chk09"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk10" class="hidden">
+                                            <label for="chk10"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk11" class="hidden">
+                                            <label for="chk11"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk12" class="hidden">
+                                            <label for="chk12"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk13" class="hidden">
+                                            <label for="chk13"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="txt-center">
+                                        <div class="checkBox">
+                                            <input type="checkBox" id="chk14" class="hidden">
+                                            <label for="chk14"></label>
+                                        </div>
+                                    </td>
+                                    <td>BBS01</td>
+                                    <td>측량업정보 증합관리시스템</td>
+                                    <td>gawoo1685</td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </div>
+                    <div class="column">
+                        <div class="table" style="margin: 0;">
+                            <table>
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="row">상위코드</th>
+                                        <td>-</td>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">코드레벨</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드 D</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드명</th>
+                                    <td>측량업정보 종합관</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드 설명</th>
+                                    <td>측량업정보 종합관</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정렬 순서</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드 속성 1</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드 속성 2</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">코드 속성 3</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">
+                                        <label for="s01">사용여부</label>
+                                    </th>
+                                    <td>
+                                        <select id="s01" class="select">
+                                            <option value="">예</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록자 ID</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록일자</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">변경자 ID</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">변경일자 ID</th>
+                                    <td>-</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!--btnArea-->
+                <div class="btnArea right">
+                    <button class="btn default"><span>하위코드 추가</span></button>
+                    <button class="btn default"><span>수정</span></button>
+                    <button class="btn default"><span>삭제</span></button>
+                </div>
+                <!--//btnArea-->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

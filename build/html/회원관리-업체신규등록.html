@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">업체신규등록</h3>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 163px;"/>
+                            <col style="width: 220px;"/>
+                            <col style="width: 163px;"/>
+                            <col style="width: 220px;"/>
+                            <col style="width: 163px;"/>
+                            <col style="width: 220px;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="txt-left">접수번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">접수구분</th>
+                                <td>신규등록</td>
+                                <th scope="row" class="txt-left">접수일자</th>
+                                <td>2021/07/18</td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">신청구분</th>
+                                <td>우편</td>
+                                <th scope="row" class="txt-left">문서번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">문서제목</th>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="tableHead flex sb">
+                    <div class="titArea">
+                        <span class="tableInfo">업체등록</span>
+                    </div>
+                    <div class="btnFuncArea">
+                        <button type="button" class="btn default">삭제</button>
+                        <button type="button" class="btn default">저장</button>
+                    </div>
+                </div>
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="txt-left">
+                                    <label for="i01">업체명</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="i01" class="inputTxt"/>
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i02">업체코드</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i02" />
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i03">업체구분</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i03" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">
+                                    <label for="i04">사업자등록번호</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i04" />
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i05">법인등록번호</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i05"/>
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i06">개업일자</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="cal" id="i06" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">
+                                    <label for="i07">대표자</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i07" />
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i08">주민번호</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i08" />
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i09">공동대표</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="cal" id="i09"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">우편번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i10">전화번호</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i10"/>
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i11">팩스번호</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i11"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">주소1</th>
+                                <td colspan="3"></td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i12">지부코드</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i12"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">주소2</th>
+                                <td colspan="3"></td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i13">시도코드</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="inputTxt" id="i13"/>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">
+                                    <label for="i14">비고</label>
+                                </th>
+                                <td colspan="5">
+                                    <input type="text" class="inputTxt" id="i14"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <div class="tableHead flex sb">
+                    <div class="titArea">
+                        <span class="tableInfo">업등록</span>
+                    </div>
+                    <div class="btnFuncArea">
+                        <button type="button" class="btn etc mgRight">업등록추가</button>
+                        <button type="button" class="btn default">삭제</button>
+                        <button type="button" class="btn default">저장</button>
+                    </div>
+                </div>
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                            <col style="width: 163px;">
+                            <col style="width: 220px;">
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="txt-left">업체명</th>
+                                <td colspan="3" class="txt-center">
+                                    <button type="button" class="btnMember">업체검색</button>
+                                </td>
+                                <th scope="row" class="txt-left">
+                                    <label for="chk01">업등록번호</label>
+                                </th>
+                                <td>
+                                    <div class="checkBox">
+                                        <input type="checkbox" id="chk01" class="hidden"/>
+                                        <label for="chk01">지점여부</label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">소재지</th>
+                                <td colspan="3" class="txt-center"></td>
+                                <th scope="row" class="txt-left">업종</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">대표자</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">공동대표</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">
+                                    <label for="i15">업등록일</label>
+                                </th>
+                                <td>
+                                    <input type="text" class="cal" id="i15"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <!-- table -->
+                <div class="table overflow-xy" style="height: 300px;">
+                    <table style="width: 1000px;">
+                        <colgroup>
+                            <col style="width: 110px;">
+                            <col style="width: 100px;">
+                            <col style="width: 80px;">
+                            <col style="width: 150px;">
+                            <col style="width: 100px;">
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col" class="txt-left">업종</th>
+                                <th scope="col" class="txt-left">업등록번호</th>
+                                <th scope="col" class="txt-left">지점여부</th>
+                                <th scope="col" class="txt-left">상호</th>
+                                <th scope="col" class="txt-left">대표자</th>
+                                <th scope="col" class="txt-left">소재지</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

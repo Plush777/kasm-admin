@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">보유 기술자 미납 회비 현황</h3>
+                <div class="btnFuncArea">
+                    <button class="btn default"><span>조회</span></button>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption>검색 테이블</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:215px;">
+                            <col style="width:100px;">
+                            <col style="width:215px;">
+                            <col style="width:100px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="txt-left">
+                                <th scope="row">
+                                    <label for="s01">검색구분</label>
+                                </th>
+                                <td class="bgYellow">
+                                    <select class="select tp" id="s01">
+                                        <option>회원전체</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="s02">납부구분</label>
+                                </th>
+                                <td>
+                                    <select class="select" id="s02">
+                                        <option>&nbsp;</option>
+                                    </select>
+                                </td>
+                                <th scope="row">근무처</th>
+                                <td class="pos-r">
+                                    <span>김해측량설계사무소</span>
+                                    <button class="btnMember pos-a">업체검색</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <hr class="hrLine">
+                <!-- emptyArea -->
+                <div class="emptyArea overflow-xy" style="width: 939px; height: 763px;">
+                    
+                </div>
+                <!-- //emptyArea -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

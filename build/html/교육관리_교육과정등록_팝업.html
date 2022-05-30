@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">교육이수현황 상세정보</h3>
+                <div class="btnFuncArea">
+                    <button type="button" class="btn default">목록</button>
+                    <button type="button" class="btn default">수정</button>
+                    <button type="button" class="btn default">삭제</button>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;"/>
+                            <col style="width: 352px;"/>
+                            <col style="width: 120px;"/>
+                            <col style="width: auto;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="txt-left">접수번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">성명</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">주민등록번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">핸드폰번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">회사명</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">교육이수내역</th>
+                                <td>
+                                    <select class="select">
+                                        <option>이수</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">고육과정명</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">과정일시</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">교육신청서</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">비고</th>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <!-- layerPopup 교육과정등록 -->
+    <div class="layerPopup" style="display: block; width: 1000px;">
+        <!-- popHead -->
+        <div class="popHead">
+            <h2 class="txt-center">교육과정 등록</h2>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <!-- table -->
+            <div class="table white bd" style="border-bottom: 1px solid #b4b4b4; padding-bottom: 40px;">
+                <table>
+                    <colgroup>
+                        <col style="width: 90px;"/>
+                        <col style="width: 330px;"/>
+                        <col style="width: 100px;"/>
+                        <col style="width: auto;"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="i03">과정명</label>
+                            </th>
+                            <td colspan="3">
+                                <input type="text" id="i03" class="inputTxt" style="width: 100%; height: 50px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="i01">시작일자</label>
+                            </th>
+                            <td>
+                                <input type="text" class="inputTxt cal" id="i01" style="width: 100%;height: 50px;"/>
+                            </td>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="i02">종료일자</label>
+                            </th>
+                            <td>
+                                <input type="text" class="inputTxt cal" id="i02" style="width: 100%;height: 50px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="s01">노출유무</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s01" style="height: 50px;">
+                                    <option>YES</option>
+                                </select>
+                            </td>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="i04">정원</label>
+                            </th>
+                            <td>
+                                <input type="text" id="i04" class="inputTxt" style="width: 100%; height: 50px;"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label for="s02">과정상태</label>
+                            </th>
+                            <td>
+                                <select class="select" style="width: 320px; height: 50px;" id="s02">
+                                    <option>진행</option>
+                                </select>
+                            </td>
+                            <th scope="row" class="txt-left txtBlueberry">
+                                <label></label>
+                            </th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //table -->
+            <div class="btnArea flexCenter">
+                <button type="button" class="btn default">취소</button>
+                <button type="button" class="btn confirm">등록</button>
+            </div>
+        </div>
+        <button type="button" class="btnClose"><span class="hidden">팝업닫기</span></button>
+        <!-- //popCont -->
+    </div>
+    <!-- //layerPopup -->
+    <div id="dimmed"></div>
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

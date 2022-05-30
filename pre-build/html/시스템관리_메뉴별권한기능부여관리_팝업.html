@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">메뉴관리</h3>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: true,
+                                autoCheckTrigger: true
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"최상위메뉴", open:true, children: [
+                                    {name: "시스템 사용권한신청", children: [
+                                            {name: "child 01"},
+                                            {name: "child 02"},
+                                        ]},
+                                    { "name":"경력 관리 - 경력 관리", open:true, children: [
+                                            {name: "경력 신고절차 안내 - 경력신고 절차 안내" },
+                                            {name: "경력 신고 - 경력신고"},
+                                            {name: "경력 신고 현황 · 경력 신고 현황"},
+                                            {name: "업체 경력 신고 승인 - 업체 경력 신고 승인" },
+                                            {name: "경력 경정 신청 - 경력 경정 신청"},
+                                            {name: "제3자 정보제공 동의 - 제3자 정보 제공 동의"},
+                                            {name: "회비 납부 - 회비 납부 - 개인 회원 회비관리"}
+                                        ]},
+                                    {name: "증명서 발금신청 - 증명서 발금신청", open:true, children: [
+                                            {name: "증명서 발금 신청 · 증명서 발금 신청"},
+                                            {name: "증명서 결제 · 증명서 결제"},
+                                            {name: "증명서 발급현황 출력 · 증명서 발급현황 출력"},
+                                        ]},
+                                    {name: "회비관리 - 회비 관리", open:true, children: [
+                                            {name: "회비 납부 - 회비 납부"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "측량 용역사업 관리 - 측량 용역 사업 관리 발주기관", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                        ]},
+                                    {name: "업체 정보", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+                    var zTreeObj2,
+                        setting2 = {
+                            view: {
+                                selectedMulti: false
+                            },
+                            check: {
+                                enable: true,
+                                autoCheckTrigger: true
+                            }
+                        },
+                        zTreeNodes2 = [
+                            {"name":"Site Map", open:true, icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                    {name: "pNode 01", icon:"../lib/ztree/css/img/diy/ico-corp.png", children: [
+                                            {name: "child 01", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                            {name: "child 02", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                        ]},
+                                    { "name":"baidu", icon:"../lib/ztree/css/img/diy/ico-person.png"},
+                                    { "name":"sina", icon:"../lib/ztree/css/img/diy/ico-person.png"}
+                                ]
+                            }
+                        ];
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                        zTreeObj2 = $.fn.zTree.init($("#tree2"), setting2, zTreeNodes2);
+                    });
+                </script>
+                <!--treeArea-->
+                <div class="treeArea">
+                    <div class="column" style="background: #f9f9f9;">
+                        <ul id="tree1" class="ztree"><li id="tree1_1" class="level0" tabindex="0"><span id="tree1_1_switch" class="button level0 switch root_open"></span><span id="tree1_1_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_1_a" class="level0" target="_blank" title="최상위메뉴"><span id="tree1_1_ico" class="button ico_open"></span><span id="tree1_1_span" class="node_name">최상위메뉴</span></a><ul id="tree1_1_ul" class="level0 " style="display:block"><li id="tree1_2" class="level1" tabindex="0"><span id="tree1_2_switch" class="button level1 switch center_close"></span><span id="tree1_2_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_2_a" class="level1" target="_blank" title="시스템 사용권한신청"><span id="tree1_2_ico" class="button ico_close"></span><span id="tree1_2_span" class="node_name">시스템 사용권한신청</span></a></li><li id="tree1_6" class="level1" tabindex="0"><span id="tree1_6_switch" class="button level1 switch bottom_close"></span><span id="tree1_6_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_6_a" class="level1" target="_blank" title="경력 관리 - 경력 관리"><span id="tree1_6_ico" class="button ico_close"></span><span id="tree1_6_span" class="node_name">경력 관리 - 경력 관리</span></a></li></ul></li></ul>
+                    </div>
+                    <div class="column">
+                        <p class="tableInfo">메뉴상세</p>
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">메뉴 번호</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상위 메뉴명</th>
+                                    <td>경력 관리</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">메뉴명</th>
+                                    <td>경력신고(절차)안내</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">URL</th>
+                                    <td>/crobas/careeStemGoi.do</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정렬 순서</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">메뉴설명</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 등록 일시</th>
+                                    <td>2018-10-02 0000000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최초 등록자</th>
+                                    <td>최초 등록자</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 수정 일시</th>
+                                    <td>15629</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록자 ID</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 수정자</th>
+                                    <td>2018-10-24 00-0000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </div>
+                </div>
+                <!--//treeArea-->
+                <!--btnArea-->
+                <div class="btnArea right">
+                    <button class="btn confirm"><span>메뉴 기능 편집</span></button>
+                    <button class="btn default"><span>하위코드 추가</span></button>
+                    <button class="btn default"><span>수정</span></button>
+                    <button class="btn default"><span>삭제</span></button>
+                </div>
+                <!--//btnArea-->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <!--layerPopup-->
+    <div class="layerPopup" style="display: block;top: 85px;">
+        <!-- popHead -->
+        <div class="popHead">
+            <h2 class="txt-center">메뉴 기능별 권한 부여</h2>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <!--codeSelect-->
+            <div class="codeSelect">
+                <!-- selectList -->
+                <div class="selectList">
+                    <p class="name">
+                        <label for="s01">검색조건</label>
+                    </p>
+                    <select class="select type02" id="s01">
+                        <option>메뉴 기능 명</option>
+                    </select>
+                </div>
+                <!-- //selectList -->
+                <!-- selectList -->
+                <div class="selectList">
+                    <p class="name">
+                        <label for="i01">검색명</label>
+                    </p>
+                    <input type="text" id="i01" placeholder="검색어를 입력하세요." style="width: 220px;"/>
+                </div>
+                <!-- //selectList -->
+                <!-- selectList -->
+                <div class="selectList">
+                    <p class="name">권한코드</p>
+                    <label>
+                        <input type="text" class="purple default" placeholder="검색어를 입력하세요." value="ROLE_ASO30">
+                    </label>
+                </div>
+                <!-- //selectList -->
+                <div class="btnArea right" style="display: inline-flex;padding: 0;">
+                    <button class="btnMember" style="border-radius: 30px;">재설정</button>
+                    <button class="btnMember" style="margin-left: 5px;border-radius: 30px;">검색</button>
+                </div>
+            </div>
+            <!--//codeSelect-->
+            <!--textInfo-->
+            <div class="textInfo">
+                <p>검색결과 <span> 8</span> 건</p>
+                <div style="text-align: right;font-size: 13px;">
+                    <p>※ 업체 기본정보 - 업체경력(협회) 메뉴 기능에 권한을 부여합니다. 상위권한에 등록 되어 있는 기능은 하위권한에 상속됩니다. </p>
+                    <p>※ 체크박스 표시되어 있는 항목은 해당 권한에 할당 되어있음을 의미합니다. </p>
+                </div>
+            </div>
+            <!--//textInfo-->
+            <!--table-->
+            <div class="table overflow-xy" style="height: 500px;border-bottom: 1px solid #dbdbdb">
+                <table>
+                    <caption>업체접수 관리 테이블</caption>
+                    <colgroup>
+                        <col style="width: 80px;">
+                        <col style="width: 80px;">
+                        <col style="width: 80px;">
+                        <col style="width: 200px;">
+                        <col style="width: 200px;">
+                        <col style="width: 280px;">
+                        <col style="width: 200px;">
+                    </colgroup>
+                    <thead>
+                        <tr class="txt-left">
+                            <th scope="col" class="txt-center">
+                                <div class="checkBox">
+                                    <input type="checkBox" id="chk01" class="hidden">
+                                    <label for="chk01"></label>
+                                </div>
+                            </th>
+                            <th scope="col">번호</th>
+                            <th scope="col">상태</th>
+                            <th scope="col">메뉴 기능 명</th>
+                            <th scope="col">메뉴 기능 설명</th>
+                            <th scope="col">메뉴 기능 URL</th>
+                            <th scope="col">수정 일시</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk02" class="hidden">
+                                <label for="chk02"></label>
+                            </div>
+                        </td>
+                        <td>1</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk03" class="hidden">
+                                <label for="chk03"></label>
+                            </div>
+                        </td>
+                        <td>2</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk04" class="hidden">
+                                <label for="chk04"></label>
+                            </div>
+                        </td>
+                        <td>3</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk05" class="hidden">
+                                <label for="chk05"></label>
+                            </div>
+                        </td>
+                        <td>4</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk06" class="hidden">
+                                <label for="chk06"></label>
+                            </div>
+                        </td>
+                        <td>5</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk07" class="hidden">
+                                <label for="chk07"></label>
+                            </div>
+                        </td>
+                        <td>6</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk08" class="hidden">
+                                <label for="chk08"></label>
+                            </div>
+                        </td>
+                        <td>7</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk09" class="hidden">
+                                <label for="chk09"></label>
+                            </div>
+                        </td>
+                        <td>8</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk10" class="hidden">
+                                <label for="chk10"></label>
+                            </div>
+                        </td>
+                        <td>9</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    <tr>
+                        <td class="txt-center">
+                            <div class="checkBox">
+                                <input type="checkBox" id="chk11" class="hidden">
+                                <label for="chk11"></label>
+                            </div>
+                        </td>
+                        <td>10</td>
+                        <td></td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>소속 기술자 경력 신고</td>
+                        <td>/cre/pts/selectPsitn TcnsprtSttlnfoListVw.do</td>
+                        <td>2021-05-06 14:13:28</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+            <div class="btnArea flexCenter">
+                <button class="btn confirm"><span>적용</span></button>
+            </div>
+        </div>
+        <!-- //popCont -->
+        <button type="button" class="btnClose"><span class="hidden">팝업닫기</span></button>
+    </div>
+    <!--//layerPopup-->
+    <div id="dimmed"></div>
+
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

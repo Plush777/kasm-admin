@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">공지사항 등록</h3>
+                <div class="btnFuncArea">
+                    <button class="btn etc"><span>취소</span></button>
+                    <button class="btn confirm"><span>등록</span></button>
+                </div>
+                <!-- table -->
+                <div class="table white bottom">
+                    <table>
+                        <colgroup>
+                            <col style="width: 90px;"/>
+                            <col style="width: auto;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr class="txt-left">
+                                <th scope="row" class="txtBlueberry">
+                                    <label for="i01">제목</label>
+                                </th>
+                                <td>
+                                    <input type="text" placeholder="제목을 입력하세요" id="i01" class="inputTxt" style="height: 50px;"/>
+                                </td>
+                            </tr>
+                            <tr class="txt-left">
+                                <th scope="row" class="txtBlueberry vTop sm">내용</th>
+                                <td>
+                                    <div class="emptyArea" style="width: 100%; height: 450px;">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txtBlueberry">상단출력 여부</th>
+                                <td>
+                                    <div class="flex ac">
+                                        <ul class="inputList">
+                                            <li><p class="radio"><input type="radio" name="radioInput" id="radioInput01" class="hidden" checked/><label for="radioInput01">예</label></p></li>
+                                            <li><p class="radio"><input type="radio" name="radioInput" id="radioInput02" class="hidden"/><label for="radioInput02">아니요</label></p></li>
+                                         </ul>
+                                         <p class="desc">※ 공지 설정 시 최상단에 글이 위치하게 됩니다.</p>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- table -->
+                <!-- group -->
+                <div class="group flex sb ac">
+                    <div class="titArea">
+                        <span>파일첨부</span>
+                    </div>
+                    <div class="btnArea">
+                        <button type="button" class="btnMember">파일선택</button>
+                        <button type="button" class="btnMember">선택한 파일 삭제</button>
+                        <button type="button" class="btnMember">전체 다운로드</button>
+                    </div>
+                </div>
+                <!-- //group -->
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption>파일첨부 테이블</caption>
+                        <colgroup>
+                            <col style="width: 80px;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: auto;"/>
+                            <col style="width: 170px;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: 80px;"/>
+                            <col style="width: 100px;"/>
+                            <col style="width: 80px;"/>
+                        </colgroup>
+                        <thead class="txt-left">
+                            <tr>
+                                <th scope="col">선택</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">파일명</th>
+                                <th scope="col">미리보기</th>
+                                <th scope="col">파일크기</th>
+                                <th scope="col">확장자</th>
+                                <th scope="col">등록일시</th>
+                                <th scope="col">다운로드</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td colspan="8" class="txt-center">파일선택 버튼을 누르면 파일을 첨부할 수 있습니다.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

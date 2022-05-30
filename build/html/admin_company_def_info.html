@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">업체기본 정보</h3>
+                <div class="btnFuncArea">
+                    <button class="btn etc mgRight"><span>초기화</span></button>
+                    <button class="btn default"><span>목록</span></button>
+                    <button class="btn default"><span>수정</span></button>
+                    <button class="btn default"><span>삭제</span></button>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption>업체 기본정보 테이블</caption>
+                        <colgroup>
+                            <col style="width: 100px;"/>
+                            <col style="width: 215px;"/>
+                            <col style="width: 100px;"/>
+                            <col style="width: 215px;"/>
+                            <col style="width: 100px;"/>
+                            <col style="width: 215px;"/>
+                        </colgroup>
+                        <tbody>
+
+                        <tr class="txt-left">
+                            <th scope="row" rowspan="2">
+                                <label for="i01">업체명</label>
+                            </th>
+                            <td rowspan="2"><input type="text" class="inputTxt" id="i01"/></td>
+                            <th scope="row">
+                                <label for="i02">업체명(한문)</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i02"/></td>
+                            <th scope="row">
+                                <label for="i03">업체코드</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i03"/></td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="i04">업체명(영문)</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i04"/></td>
+                            <th scope="row">
+                                <label for="i05">개업일</label>
+                            </th>
+                            <td>
+                                <input type="text" class="cal" id="i05"/>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row" rowspan="2">
+                                <label for="i06">대표자</label>
+                            </th>
+                            <td rowspan="2"><input type="text" class="inputTxt" id="i06"/></td>
+                            <th scope="row">
+                                <label for="i07">대표자(한문)</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i07"/></td>
+                            <th scope="row">
+                                <label for="i08">폐업일</label>
+                            </th>
+                            <td><input type="text" class="cal" id="i08"/></td>
+                        </tr>
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="i09">대표자(영문)</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i09"/></td>
+                            <th scope="row">
+                                <label for="i10">
+                                    대표자<br>주민번호
+                                </label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i10"/></td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="s01">업체구분</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s01">
+                                    <option>&nbsp;</option>
+                                </select>
+                            </td>
+                            <th scope="row">
+                                <label for="i11">법인등록번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i11"/></td>
+                            <th scope="row">
+                                <label for="i12">사업자등록번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i12"/></td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="s02">회원구분</label>
+                            </th>
+                            <td>
+                                <select class="select txtRed" id="s02">
+                                    <option>업체회원</option>
+                                </select>
+                            </td>
+                            <th scope="row">
+                                <label for="i13">입회일</label>
+                            </th>
+                            <td class="pos-r">
+                                <input type="text" class="cal" id="i13" value="1996/02/27"/>
+                            </td>
+                            <th scope="row">
+                                <label for="i14">탈퇴일</label>
+                            </th>
+                            <td class="pos-r">
+                                <input type="text" class="cal" id="i14" value="1996/02/27"/>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="s03">지회</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s03">
+                                    <option>경기도남부</option>
+                                </select>
+                            </td>
+                            <th scope="row">
+                                <label for="s04">시도</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s04">
+                                    <option>경기</option>
+                                </select>
+                            </td>
+                            <th scope="row">
+                                <label for="s05">시/군/구 코드</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s05">
+                                    <option>광명시</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">우편번호</th>
+                            <td class="pos-r">
+                                <span>14235</span>
+                                <button class="btnMember pos-a alignRight">우편번호 찾기</button>
+                            </td>
+                            <th scope="row">
+                                <label for="i15">전화번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i15"/></td>
+                            <th scope="row">
+                                <label for="i16">팩스번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i16"/></td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">주소</th>
+                            <td colspan="3">경기 광명시 오리로 876번21401호 (철산동 미성아이테크빌딩 2차)</td>
+                            <th scope="row">
+                                <label for="s06">주소상태</label>
+                            </th>
+                            <td>
+                                <select class="select" id="s06">
+                                    <option>정상</option>
+                                </select>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">우편물 우편번호</th>
+                            <td class="pos-r">
+                                <span>08511</span>
+                                <button class="btnMember pos-a alignRight">우편번호 찾기</button>
+                            </td>
+                            <th scope="row">
+                                <label for="i17">우편물 전화번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i17"/></td>
+                            <th scope="row">
+                                <label for="i18">우편물 팩스번호</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i18"/></td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">우편물 주소</th>
+                            <td colspan="3">서울 금천구 벚꽃로 254 (가산 월드메르디앙(1차)벤처센터914호)</td>
+                            <th scope="row">우편물 주소상태</th>
+                            <td>
+                                <ul class="inputList">
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput02"
+                                                                class="hidden"/><label for="radioInput02">정상</label></p>
+                                    </li>
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput03"
+                                                                class="hidden"/><label for="radioInput03">반송</label></p>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">아이디</th>
+                            <td class="bgBlue">10006052001</td>
+                            <th scope="row">
+                                <label for="i19">공동대표</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i19"/></td>
+                            <th scope="row">누적 미납금</th>
+                            <td class="bgBlue txtRed pos-r">
+                                <span>3983000</span>
+                                <button class="btnMember pos-a alignRight">영수증</button>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">
+                                <label for="i20">이메일</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i20"/></td>
+                            <th scope="row">
+                                <label for="i21">홈페이지</label>
+                            </th>
+                            <td><input type="text" class="inputTxt" id="i21"/></td>
+                            <th scope="row">
+                                <label for="i22">협회 직책</label>
+                            </th>
+                            <td class="txtRed pos-r">
+                                <input type="text" class="inputTxt" id="i22" value="대의원 (일반제외)"/>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">인감지정여부</th>
+                            <td>
+                                <ul class="inputList">
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput04"
+                                                                class="hidden"/><label for="radioInput04">예</label></p>
+                                    </li>
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput05"
+                                                                class="hidden"/><label for="radioInput05">아니요</label></p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <th scope="row">인감사용여부</th>
+                            <td>
+                                <ul class="inputList">
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput06"
+                                                                class="hidden"/><label for="radioInput06">예</label></p>
+                                    </li>
+                                    <li><p class="radio"><input type="radio" name="radioInput" id="radioInput07"
+                                                                class="hidden"/><label for="radioInput07">아니요</label></p>
+                                    </li>
+                                </ul>
+                            </td>
+                            <th scope="row">
+                                <label for="i23">승계일</label>
+                            </th>
+                            <td class="txtRed pos-r">
+                                <input type="text" id="i23" class="cal"/>
+                            </td>
+                        </tr>
+
+                        <tr class="txt-left">
+                            <th scope="row">최종수정일</th>
+                            <td>2021/02/18</td>
+                            <th scope="row">최종수정자</th>
+                            <td class="bgBlue">유국현</td>
+                            <th scope="row">
+                                <label for="i24">징계 유무</label>
+                            </th>
+                            <td><input type="text" id="i24" class="inputTxt"/></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="i25">비고</label>
+                            </th>
+                            <td colspan="5"><input type="text" id="i25" class="inputTxt"/></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+
+                <hr class="hrLine"/>
+
+                <div class="table overflow-xy" style="height: 500px;">
+                    <table style="width: 1000px;">
+                        <caption>업체 기본정보 테이블</caption>
+                        <colgroup>
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: 80px;">
+                            <col style="width: auto;">
+                        </colgroup>
+
+                        <thead>
+                        <tr class="txt-left">
+                            <th scope="row">업등록번호</th>
+                            <th scope="row">업종명</th>
+                            <th scope="row">입회일</th>
+                            <th scope="row">업등록일</th>
+                            <th scope="row">업취소일</th>
+                            <th scope="row">승계일</th>
+                            <th scope="row">업취득일</th>
+                            <th scope="row">업상실일</th>
+                            <th scope="row">미납액</th>
+                            <th scope="row">변경신청일</th>
+                            <th scope="row"></th>
+                            <th scope="row"></th>
+                        </tr>
+                        </thead>
+
+                        <tbody>
+                        <tr>
+                            <td>01-5062</td>
+                            <td>지도제작업</td>
+                            <td>2008/08/06</td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>01-9008</td>
+                            <td>영상처리업</td>
+                            <td>2008/08/06</td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>경기 1-47</td>
+                            <td>지적측량업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>08-000126</td>
+                            <td>영상처리업</td>
+                            <td></td>
+                            <td>2008/08/06</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td class="txt-right txtRed">2000,000</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

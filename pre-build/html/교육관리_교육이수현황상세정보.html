@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">교육이수현황 상세정보</h3>
+                <div class="btnFuncArea">
+                    <button type="button" class="btn default">목록</button>
+                    <button type="button" class="btn default">수정</button>
+                    <button type="button" class="btn default">삭제</button>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <colgroup>
+                            <col style="width: 120px;"/>
+                            <col style="width: 352px;"/>
+                            <col style="width: 120px;"/>
+                            <col style="width: auto;"/>
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="txt-left">접수번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">성명</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">주민등록번호</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">핸드폰번호</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">회사명</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">
+                                    <label for="s01">교육이수내역</label>
+                                </th>
+                                <td>
+                                    <select class="select" id="s01">
+                                        <option>이수</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">고육과정명</th>
+                                <td colspan="3"></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">과정일시</th>
+                                <td></td>
+                                <th scope="row" class="txt-left">교육신청서</th>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="txt-left">비고</th>
+                                <td colspan="3"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

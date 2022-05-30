@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">메뉴관리</h3>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: false,
+                                autoCheckTrigger: false
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"최상위메뉴", open:true, children: [
+                                    {name: "시스템 사용권한신청", children: [
+                                            {name: "child 01"},
+                                            {name: "child 02"},
+                                        ]},
+                                    { "name":"경력 관리 - 경력 관리", open:true, children: [
+                                            {name: "경력 신고절차 안내 - 경력신고 절차 안내" },
+                                            {name: "경력 신고 - 경력신고"},
+                                            {name: "경력 신고 현황 · 경력 신고 현황"},
+                                            {name: "업체 경력 신고 승인 - 업체 경력 신고 승인" },
+                                            {name: "경력 경정 신청 - 경력 경정 신청"},
+                                            {name: "제3자 정보제공 동의 - 제3자 정보 제공 동의"},
+                                            {name: "회비 납부 - 회비 납부 - 개인 회원 회비관리"}
+                                        ]},
+                                    {name: "증명서 발금신청 - 증명서 발금신청", open:true, children: [
+                                            {name: "증명서 발금 신청 · 증명서 발금 신청"},
+                                            {name: "증명서 결제 · 증명서 결제"},
+                                            {name: "증명서 발급현황 출력 · 증명서 발급현황 출력"},
+                                        ]},
+                                    {name: "회비관리 - 회비 관리", open:true, children: [
+                                            {name: "회비 납부 - 회비 납부"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "오픈 AP 제공 - 오픈 AP 제공 발주기관", open:true, children: [
+                                            {name: "D 오픈 API 신청 - 오픈 AP 신청"},
+                                            {name: "D 오픈 AP 신청 현황 - 오픈 A 신청 현황"},
+                                        ]},
+                                    {name: "측량 용역사업 관리 - 측량 용역 사업 관리 발주기관", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                        ]},
+                                    {name: "업체 정보", open:true, children: [
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                            {name: "측량 용역 사업 등록 · 측량 용역 사업 등록"},
+                                            {name: "측량용역 사업 현황 · 측량 용역 사업 현황"},
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                    });
+                </script>
+                <!--treeArea-->
+                <div class="treeArea">
+                    <div class="column" style="background: #f9f9f9;">
+                        <ul id="tree1" class="ztree"><li id="tree1_1" class="level0" tabindex="0"><span id="tree1_1_switch" class="button level0 switch root_open"></span><span id="tree1_1_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_1_a" class="level0" target="_blank" title="최상위메뉴"><span id="tree1_1_ico" class="button ico_open"></span><span id="tree1_1_span" class="node_name">최상위메뉴</span></a><ul id="tree1_1_ul" class="level0" style="display:block"><li id="tree1_2" class="level1" tabindex="0"><span id="tree1_2_switch" class="button level1 switch center_close"></span><span id="tree1_2_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_2_a" class="level1" target="_blank" title="시스템 사용권한신청"><span id="tree1_2_ico" class="button ico_close"></span><span id="tree1_2_span" class="node_name">시스템 사용권한신청</span></a></li><li id="tree1_6" class="level1" tabindex="0"><span id="tree1_6_switch" class="button level1 switch bottom_close"></span><span id="tree1_6_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_6_a" class="level1" target="_blank" title="경력 관리 - 경력 관리"><span id="tree1_6_ico" class="button ico_close"></span><span id="tree1_6_span" class="node_name">경력 관리 - 경력 관리</span></a></li></ul></li></ul>
+                    </div>
+                    <div class="column">
+                        <p class="tableInfo">메뉴 상세</p>
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">메뉴 번호</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상위 메뉴명</th>
+                                    <td>경력 관리</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">메뉴명</th>
+                                    <td>경력신고(절차)안내</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">URL</th>
+                                    <td>/crobas/careeStemGoi.do</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정렬 순서</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">메뉴설명</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 등록 일시</th>
+                                    <td>2018-10-02 0000000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최초 등록자</th>
+                                    <td>최초 등록자</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 수정 일시</th>
+                                    <td>15629</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">등록자 ID</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최종 수정자</th>
+                                    <td>2018-10-24 00-0000</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </div>
+                </div>
+                <!--//treeArea-->
+                <!--btnArea-->
+                <div class="btnArea right">
+                    <button class="btn confirm"><span>메뉴 기능 편집</span></button>
+                    <button class="btn default"><span>하위코드 추가</span></button>
+                    <button class="btn default"><span>수정</span></button>
+                    <button class="btn default"><span>삭제</span></button>
+                </div>
+                <!--//btnArea-->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

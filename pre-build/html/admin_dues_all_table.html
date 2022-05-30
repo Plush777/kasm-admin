@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">전체 회비 현황표</h3>
+                <div class="btnFuncArea">
+                    <button class="btn default"><span>조회</span></button>
+                </div>
+
+                <!-- table -->
+                <div class="table">
+                    <table>
+                        <caption>검색 테이블</caption>
+                        <colgroup>
+                            <col style="width:100px;">
+                            <col style="width:215px;">
+                            <col style="width:100px;">
+                            <col style="width:215px;">
+                            <col style="width:100px;">
+                            <col style="width:auto;">
+                        </colgroup>
+                        <tbody>
+                            <tr class="txt-left">
+                                <th scope="row">
+                                    <label for="s01">납부구분</label>
+                                </th>
+                                <td class="bgYellow">
+                                    <select class="select tp" id="s01">
+                                        <option>납부</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="s02">검색구분</label>
+                                </th>
+                                <td>
+                                    <select class="select" id="s02">
+                                        <option>경력관리자불포함</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="i01">검색기준일</label>
+                                </th>
+                                <td>
+                                    <input type="text" id="i01" class="cal"/>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <hr class="hrLine">
+                <!-- emptyArea -->
+                <div class="emptyArea overflow-xy" style="width: 939px; height: 763px;">
+                    
+                </div>
+                <!-- //emptyArea -->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

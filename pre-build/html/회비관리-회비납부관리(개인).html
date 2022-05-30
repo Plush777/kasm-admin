@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav" >
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<!--wrap-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!--container-->
+    <div id="container" >
+        <!--contents-->
+        <div id="contents">
+            <!--lnb-->
+            @@include('include/lnb.html')
+            <!--//lnb-->
+            <!--content-->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">회비납부관리</h3>
+                <div class="btnFuncArea">
+                    <button class="btn etc mgRight"><span>회비부가</span></button>
+                    <button class="btn default"><span>조회</span></button>
+                    <button class="btn confirm"><span>수정</span></button>
+                    <button class="btn confirm"><span>삭제</span></button>
+                    <button class="btn confirm"><span>저장</span></button>
+                </div>
+
+                <!--codeSelect-->
+                <div class="codeSelect">
+                    <p class="name">회원/업체코드</p>
+                    <!--inputList-->
+                    <ul class="inputList">
+                       <li><p class="radio"><input type="radio" name="radioInput" id="radioInput01" class="hidden"/><label for="radioInput01">개인</label></p></li>
+                       <li><p class="radio"><input type="radio" name="radioInput" id="radioInput02" class="hidden"/><label for="radioInput02">업체</label></p></li>
+                    </ul>
+                    <!--//inputList-->
+                    <button class="btnMember">회원검색</button>
+                    <!--btnMng-->
+                    <div class="btnMng" style="display: none;">
+                        <ul>
+                            <li>업체관리</li>
+                            <li>기술관리</li>
+                            <li>기능사관리</li>
+                        </ul>
+                    </div>
+                    <!--//btnMng-->
+
+                </div>
+                <!--//codeSelect-->
+
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>회비 개인 테이블</caption>
+                        <colgroup>
+                            <col style="width:100px;" />
+                            <col style="width:90px;" />
+                            <col style="width:100px;" />
+                            <col style="width:160px;" />
+                            <col style="width:120px;" />
+                            <col style="width:130px;" />
+                            <col style="width:100px;" />
+                            <col style="width:auto" />
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">회원코드</th>
+                            <td>0050005118</td>
+                            <th scope="row">회원명</th>
+                            <td></td>
+                            <th scope="row">주민번호</th>
+                            <td>650203-*******</td>
+                            <th scope="row">근무처</th>
+                            <td>(주)신한항업</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">주소</th>
+                            <td colspan="5">경기 김포시 봉화로 18 (사우동)</td>
+                            <th scope="row">전화번호</th>
+                            <td>031-985-0022</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">최초입회일</th>
+                            <td>2008/08/06</td>
+                            <th scope="row">최종입회일</th>
+                            <td></td>
+                            <th scope="row">탈퇴일</th>
+                            <td></td>
+                            <th scope="row">평생회원가입일</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">이관일</th>
+                            <td>2008/08/06</td>
+                            <th scope="row">이관건수</th>
+                            <td></td>
+                            <th scope="row">수관일</th>
+                            <td></td>
+                            <th scope="row">수관건수</th>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+                <!--table-->
+                <div class="table">
+                    <table>
+                        <caption>년도 회비 테이블</caption>
+                        <colgroup>
+                            <col style="width:100px;" />
+                            <col style="width:130px;" />
+                            <col style="width:100px;" />
+                            <col style="width:130px;" />
+                            <col style="width:110px;" />
+                            <col style="width:130px;" />
+                            <col style="width:100px;" />
+                            <col style="width:auto" />
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <th scope="row">회비년도</th>
+                            <td>2021년</td>
+                            <th scope="row">회원종류</th>
+                            <td>회원</td>
+                            <td colspan="4" style="background: #f3f3f3"></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <label for="i01">납부일자</label>
+                            </th>
+                            <td><input type="text" id="i01" class="cal"/></td>
+                            <th scope="row">
+                                <label for="s01">납부구분</label>
+                            </th>
+                            <th scope="row">
+                                <select id="s01" class="select">
+                                    <option value="">온라인</option>
+                                </select>
+                            </th>
+                            <th scope="row">
+                                <label for="i02">처리일자</label>
+                            </th>
+                            <td>
+                                <input type="text" id="i02" class="cal"/>
+                            </td>
+                            <th scope="row">
+                                <label for="chk01">상계처리</label>
+                            </th>
+                            <td>
+                                <div class="checkBox">
+                                    <input type="checkBox" id="chk01" class="hidden">
+                                    <label for="chk01"></label>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="num01">평생회비</label></th>
+                            <td>
+                                <input type="text" id="num01" class="inputTxt">
+                            </td>
+                            <th scope="row">반환금액</th>
+                            <td></td>
+                            <th scope="row">미수금</th>
+                            <td class="bgBlue txtRight">0</td>
+                            <th scope="row">상계금액</th>
+                            <td class="bgBlue txtRight">0</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><label for="num02">입회비</label></th>
+                            <td>
+                                <input type="text" id="num02" class="inputTxt">
+                            </td>
+                            <th scope="row"><label for="num03">기본회비</label></th>
+                            <td>
+                                <input type="text" id="num03" class="inputTxt">
+                            </td>
+                            <th scope="row">과년도기본회비</th>
+                            <td class="bgBlue txtRight">0</td>
+                            <th scope="row">가수금</th>
+                            <td class="bgBlue txtRight">0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+                <hr class="hrLine" />
+
+
+                <div class="table overflow-xy" style="height:150px">
+                    <table style="width:2000px;">
+                        <caption>회비/납부 테이블</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">회비년도</th>
+                            <th scope="col">납부일자</th>
+                            <th scope="col">납부구분</th>
+                            <th scope="col">입회비</th>
+                            <th scope="col">기본회비</th>
+                            <th scope="col">미수금</th>
+                            <th scope="col">과년도기본회비</th>
+                            <th scope="col">처리일자</th>
+                            <th scope="col">반환금액</th>
+                            <th scope="col">상계금액</th>
+                            <th scope="col">평생회비</th>
+                            <th scope="col">가수금</th>
+                            <th scope="col">적재·회종</th>
+                            <th scope="col">비고</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>2009</td>
+                            <td>2008/08/06</td>
+                            <td>온라인</td>
+                            <td class="txtRight">0</td>
+                            <td>14,000</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                        </tr>
+                        <tr>
+                            <td>2009</td>
+                            <td>2008/08/06</td>
+                            <td>온라인</td>
+                            <td class="txtRight">0</td>
+                            <td>14,000</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                        </tr>
+                        <tr>
+                            <td>2009</td>
+                            <td>2008/08/06</td>
+                            <td>온라인</td>
+                            <td class="txtRight">0</td>
+                            <td>14,000</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                            <td class="txtRight">0</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+                <!--table-->
+                <div class="table overflow-xy" style="height:190px">
+                    <table style="width:1500px;">
+                        <caption>회비 기록 테이블</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">2010년</th>
+                            <th scope="col">2011년</th>
+                            <th scope="col">2012년</th>
+                            <th scope="col">2013년</th>
+                            <th scope="col">2014년</th>
+                            <th scope="col">2015년</th>
+                            <th scope="col">2016년</th>
+                            <th scope="col">2017년</th>
+                            <th scope="col">2018년</th>
+                            <th scope="col">2019년</th>
+                            <th scope="col">2020년</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                        </tr>
+                        <tr>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                            <td class="txt-right">14,000</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--//table-->
+
+            </div>
+            <!--//content-->
+        </div>
+        <!--//contents-->
+    </div>
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+<!--//wrap-->
+</body>
+</html>

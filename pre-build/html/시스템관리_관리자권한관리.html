@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">관리자 권한관리</h3>
+
+                <script type="text/javascript">
+                    var zTreeObj1,
+                        setting1 = {
+                            check: {
+                                enable: false,
+                                autoCheckTrigger: false
+                            },
+                            view: {
+                                selectedMulti: false
+                            }
+                        },
+                        zTreeNodes1 = [
+                            {"name":"권한목록", open:true, children: [
+                                    {name: "모든사용자", open:true, children: [
+                                            {name: "미로그인한사용자"},
+                                        ]},
+                                    { "name":"로그인한사용자", open:true, children: [
+                                            { "name":"권한승인이필요한사용자", open:true, children: [
+                                                    { "name":"권한승인이후", open:true, children: [
+                                                            {name: "비회원업체 담당자" },
+                                                            {name: "회원업체담당자" },
+                                                            {name: "발주기관" },
+                                                            {name: "개인회원" },
+                                                            {name: "측량업등록기관" },
+                                                    ]},
+                                                    { "name":"권한승인이전", open:true, children: [
+                                                            {name: "협회권한승인대기자" },
+                                                            {name: "엄체권한승인대기자" },
+                                                            {name: "발주기관권한승인대기자" },
+                                                            {name: "측량업등록기관권한승인대기자" },
+                                                    ]},
+                                            ]},
+                                            { "name":"권한승인이필요없는사용자", open:true, children: [
+                                                    {name: "협회담당자1" },
+                                                    {name: "협회담당자2" },
+                                                    { "name":"시스템관리자", open:true, children: [
+                                                            {name: "TESTCODE" },
+                                                    ]},
+                                            ]},
+                                        ]},
+                                ]
+                            },
+
+                        ];
+
+                    $(document).ready(function(){
+                        zTreeObj1 = $.fn.zTree.init($("#tree1"), setting1, zTreeNodes1);
+                    });
+                </script>
+                <!--treeArea-->
+                <div class="treeArea">
+                    <div class="column" style="background: #f9f9f9;">
+                        <ul id="tree1" class="ztree"><li id="tree1_1" class="level0" tabindex="0" ><span id="tree1_1_switch" class="button level0 switch root_open"></span><span id="tree1_1_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_1_a" class="level0" target="_blank"  title="최상위메뉴"><span id="tree1_1_ico" class="button ico_open" ></span><span id="tree1_1_span" class="node_name">최상위메뉴</span></a><ul id="tree1_1_ul" class="level0" style="display:block"><li id="tree1_2" class="level1" tabindex="0"><span id="tree1_2_switch" class="button level1 switch center_close"></span><span id="tree1_2_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_2_a" class="level1" target="_blank" title="시스템 사용권한신청"><span id="tree1_2_ico" class="button ico_close"></span><span id="tree1_2_span" class="node_name">시스템 사용권한신청</span></a></li><li id="tree1_6" class="level1" tabindex="0"><span id="tree1_6_switch" class="button level1 switch bottom_close"></span><span id="tree1_6_check" class="button chk checkbox_false_full"></span><a href="#" id="tree1_6_a" class="level1" target="_blank" title="경력 관리 - 경력 관리"><span id="tree1_6_ico" class="button ico_close"></span><span id="tree1_6_span" class="node_name">경력 관리 - 경력 관리</span></a></li></ul></li></ul>
+                    </div>
+                    <div class="column">
+                        <p class="tableInfo">권한코드 상세</p>
+                        <!--table-->
+                        <div class="table">
+                            <table>
+                                <caption>테이블</caption>
+                                <colgroup>
+                                    <col style="width: 120px;">
+                                    <col style="width: auto;">
+                                </colgroup>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">권한코드</th>
+                                    <td>ROLE_NOLOGIN</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">상위 권한코드</th>
+                                    <td>ROLE_ANONYMOUS</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">권한 명</th>
+                                    <td>미로그인한사용자</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">권한 설명</th>
+                                    <td>미로그인한사용자</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최초 등록 일시</th>
+                                    <td>2018-10-02 00:00:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">정렬 순서</th>
+                                    <td>-</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최초 등록 일시</th>
+                                    <td>2018-10-02 00:00:00</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">최초 수정자</th>
+                                    <td>-</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!--//table-->
+                    </div>
+                </div>
+                <!--//treeArea-->
+                <!--btnArea-->
+                <div class="btnArea right">
+                    <button class="btn default"><span>하위코드 추가</span></button>
+                    <button class="btn default"><span>수정</span></button>
+                    <button class="btn default"><span>삭제</span></button>
+                </div>
+                <!--//btnArea-->
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

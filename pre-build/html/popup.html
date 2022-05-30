@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+                <h2 class="hidden">서브메뉴</h2>
+                <div class="title">게시판</div>
+                <ul class="dep1">
+                    <li>
+                        <p>
+                            <a href="#">웹진관리</a>
+                        </p>
+                        <ul class="dep2">
+                            <li><a href="#">공지사항 관리</a></li>
+                            <li><a href="#">회원사동정 관리</a></li>
+                            <li><a href="#">FAQ 관리</a></li>
+                            <li><a href="#">오류해결안내 관리</a></li>
+                            <li><a href="#">질문과답변 관리</a></li>
+                            <li><a href="#">임금실태 관리</a></li>
+                            <li><a href="#">입찰정보시스템관리</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><a href="#">게시판관리</a></p>
+                    </li>
+                    <li>
+                        <p><a href="#">팝업관리</a></p>
+                    </li>
+                </ul>
+            </div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <!-- layerPopup 개인검색 -->
+    <div class="layerPopup" style="display: block;">
+        <!-- popHead -->
+        <div class="popHead">
+            <h2 class="txt-center">개인 검색</h2>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <!--codeSelect-->
+            <div class="codeSelect">
+                <p class="name">
+                    <label for="i02">검색어</label>
+                </p>
+                <input type="text" placeholder="신한항업" id="i02" style="width: 140px;"/>
+                <!-- selectList -->
+                <div class="selectList">
+                    <p class="name">구분</p>
+                    <!--inputList-->
+                    <ul class="inputList">
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput07" class="hidden"><label for="radioInput07">성명</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput08" class="hidden"><label for="radioInput08">주민번호</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput09" class="hidden"><label for="radioInput09">회원번호</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput10" class="hidden"><label for="radioInput10">아이디</label></p></li>
+                    </ul>
+                    <!--//inputList-->
+                </div>
+                <!-- //selectList -->
+                <button class="btnMember">조회</button>
+                <!--btnMng-->
+                <div class="btnMng" style="display: none;">
+                    <ul>
+                        <li>업체관리</li>
+                        <li>기술관리</li>
+                        <li>기능사관리</li>
+                    </ul>
+                </div>
+                <!--//btnMng-->
+            </div>
+            <!--//codeSelect-->
+            <!--table-->
+            <div class="table overflow-xy" style="height:550px;">
+                <table style="width:1500px;">
+                    <caption>회비 기록 테이블</caption>
+                    <colgroup>
+                        <col style="width: 80px;"/>
+                        <col style="width: 80px;"/>
+                        <col style="width: 100px;"/>
+                        <col style="width: 80px;"/>
+                        <col style="width: 100px;"/>
+                        <col style="width: 360px;"/>
+                        <col style="width: 360px;"/>
+                    </colgroup>
+                    <thead>
+                    <tr class="txt-left">
+                        <th scope="col">회원번호</th>
+                        <th scope="col">회원종류</th>
+                        <th scope="col">아이디</th>
+                        <th scope="col">성명</th>
+                        <th scope="col">주민번호</th>
+                        <th scope="col">주소1</th>
+                        <th scope="col">주소2</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    <tr>
+                        <td>#0579625</td>
+                        <td>회원</td>
+                        <td>gawoo1685</td>
+                        <td>배상태</td>
+                        <td>820322-1***229</td>
+                        <td>경기 광명시 오리로 876번길 21401호 (철산동 미성아이테크빌딩 2차)</td>
+                        <td>대전 대덕구 석봉동 유락아파트 A동 302호</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!--//table-->
+            <div class="btnArea flexCenter">
+                <button class="btn default"><span>추가</span></button>
+                <button class="btn default"><span>수정</span></button>
+                <button class="btn default"><span>삭제</span></button>
+                <button class="btn confirm"><span>확인</span></button>
+            </div>
+        </div>
+        <!-- //popCont -->
+        <button type="button" class="btnClose"><span class="hidden">팝업닫기</span></button>
+    </div>
+    <!-- //layerPopup -->
+
+    <!-- layerPopup 업체검색 -->
+    <div class="layerPopup" style="display: block;">
+        <!-- popHead -->
+        <div class="popHead">
+            <h2 class="txt-center">업체 검색</h2>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <!--codeSelect-->
+            <div class="codeSelect">
+                <p class="name">
+                    <label for="i01">검색어</label>
+                </p>
+                <input type="text" placeholder="신한항업" id="i01" style="width: 140px;"/>
+                <!-- selectList -->
+                <div class="selectList">
+                    <p class="name">구분</p>
+                    <!--inputList-->
+                    <ul class="inputList">
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput11" class="hidden"><label for="radioInput11">업체명</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput12" class="hidden"><label for="radioInput12">대표자</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput13" class="hidden"><label for="radioInput13">업체코드</label></p></li>
+                        <li><p class="radio"><input type="radio" name="radioInput" id="radioInput14" class="hidden"><label for="radioInput14">업등록번호</label></p></li>
+                    </ul>
+                    <!--//inputList-->
+                </div>
+                <!-- //selectList -->
+                <button class="btnMember">조회</button>
+                <!--btnMng-->
+                <div class="btnMng" style="display: none;">
+                    <ul>
+                        <li>업체관리</li>
+                        <li>기술관리</li>
+                        <li>기능사관리</li>
+                    </ul>
+                </div>
+                <!--//btnMng-->
+            </div>
+            <!--//codeSelect-->
+
+
+        </div>
+        <!-- //popCont -->
+        <button type="button" class="btnClose"><span class="hidden">팝업닫기</span></button>
+    </div>
+    <!-- //layerPopup -->
+    <div id="dimmed"></div>
+
+    <!-- layerPopup 회비부과 -->
+    <div class="layerPopup" style="display: block;">
+        <!-- popHead -->
+        <div class="popHead">
+            <h2 class="txt-center">회비부과</h2>
+        </div>
+        <!-- //popHead -->
+        <!-- popCont -->
+        <div class="popCont">
+            <!-- table -->
+            <div class="table txt-left">
+                <table>
+                    <colgroup>
+                        <col style="width: 120px;"/>
+                        <col style="width: 168px;"/>
+                        <col style="width: 120px;"/>
+                        <col style="width: 168px;"/>
+                        <col style="width: 120px;"/>
+                        <col style="width: 168px;"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">회원번호</th>
+                            <td>#0802223</td>
+                            <th scope="row">회원명</th>
+                            <td>홍길동</td>
+                            <th scope="row">주민번호</th>
+                            <td>760302-*******</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //table -->
+
+            <!-- table -->
+            <div class="table txt-left">
+                <table>
+                    <colgroup>
+                        <col style="width: 120px;"/>
+                        <col style="width: 312px;"/>
+                        <col style="width: 120px;"/>
+                        <col style="width: 312px;"/>
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th scope="row">회계연도</th>
+                            <td>#0802223</td>
+                            <th scope="row">부과일</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">미납금</th>
+                            <td>#0802223</td>
+                            <th scope="row">가수금</th>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //table -->
+            <div class="group flex fe">
+                <button type="button" class="btnMember">삭제</button>
+                <button type="button" class="btnMember">저장</button>
+            </div>
+
+            <!-- table -->
+            <div class="table overflow-xy txt-center" style="height: 190px;">
+                <table>
+                    <colgroup>
+                        <col style="width: 95px;"/>
+                        <col style="width: 150px;"/>
+                        <col style="width: 150px;"/>
+                        <col style="width: 150px;"/>
+                        <col style="width: 150px;"/>
+                        <col style="width: 150px;"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="row">선택</th>
+                            <th scope="row">회계년도</th>
+                            <th scope="row">미납금</th>
+                            <th scope="row">부과일</th>
+                            <th scope="row">상계계산</th>
+                            <th scope="row">이관구분</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <div class="checkBox">
+                                    <input type="checkbox" id="chk01" class="hidden"/>
+                                    <label for="chk01"></label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkBox">
+                                    <input type="checkbox" id="chk02" class="hidden"/>
+                                    <label for="chk02"></label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkBox">
+                                    <input type="checkbox" id="chk03" class="hidden"/>
+                                    <label for="chk03"></label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="checkBox">
+                                    <input type="checkbox" id="chk04" class="hidden"/>
+                                    <label for="chk04"></label>
+                                </div>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- //table -->
+            <div class="btnArea flexCenter">
+                <button class="btn default"><span>추가</span></button>
+                <button class="btn default"><span>수정</span></button>
+                <button class="btn default"><span>삭제</span></button>
+                <button class="btn confirm"><span>확인</span></button>
+            </div>
+        </div>
+        <button type="button" class="btnClose"><span class="hidden">팝업닫기</span></button>
+        <!-- //popCont -->
+    </div>
+    <!-- layerPopup -->
+    
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

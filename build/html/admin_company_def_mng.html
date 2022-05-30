@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../lib/jquery-ui.css">
+<link rel="stylesheet" href="../lib/swiper/css/swiper.css">
+<link rel="stylesheet" href="../lib/ztree/css/zTreeStyle.css">
+<link rel="stylesheet" href="../css/admin.css" type="text/css">
+<script type="text/javascript" src="../lib/jquery-1.12.4.js"></script>
+<script type="text/javascript" src="../lib/jquery-ui.js"></script>
+<script type="text/javascript" src="../lib/swiper/js/swiper.js"></script>
+<script type="text/javascript" src="../lib/ztree/jquery.ztree.all.js"></script>
+<script src="../lib/swiper/js/swiper.js"></script>
+<script src="../js/ui.js"></script>
+
+
+<title>공간정보협회</title>
+
+
+
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            <div id="lnb">
+    <h2 class="hidden">서브메뉴</h2>
+    <div class="title">게시판 관리</div>
+    <ul class="dep1">
+        <li>
+            <p>
+                <a href="#" title="웹진관리">웹진관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <p>
+                <a href="#" title="게시판관리">게시판관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+        <li>
+            <p>
+                <a href="#" title="팝업관리">팝업관리</a>
+            </p>
+            <ul class="dep2">
+                <li><a href="#" title="공지사항 관리">공지사항 관리</a></li>
+                <li><a href="#" title="회원사동정 관리">회원사동정 관리</a></li>
+                <li><a href="#" title="FAQ 관리">FAQ 관리</a></li>
+                <li><a href="#" title="오류해결안내 관리">오류해결안내 관리</a></li>
+                <li><a href="#" title="질문과답변 관리">질문과답변 관리</a></li>
+                <li><a href="#" title="임금실태 관리">임금실태 관리</a></li>
+                <li><a href="#" title="입찰정보시스템관리">입찰정보시스템관리</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">업체기본 관리</h3>
+                <div class="btnFuncArea">
+
+                </div>
+
+                <!-- codeSelect -->
+                <div class="codeSelect">
+                    <!-- col -->
+                    <div class="col">
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="s01">등록기관 구분</label>
+                            </p>
+                            <select class="select type02" id="s01">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name txt-left">
+                                <label for="s02">영업여부</label>
+                            </p>
+                            <select class="select type02" id="s02">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i01">측량업체명</label>
+                            </p>
+                            <input type="text" style="width: 140px;" id="i01"/>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i02">주대표자명</label>
+                            </p>
+                            <input type="text" style="width: 140px;" id="i02"/>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i03">사업자 번호</label>
+                            </p>
+                            <input type="text" style="width: 140px;" id="i03"/>
+                        </div>
+                    </div>
+                    <!-- //col -->
+                    <!-- col -->
+                    <div class="col">
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="s03">시도/시군구</label>
+                            </p>
+                            <select class="select type02" id="s03">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name txt-left">
+                                <label for="s04">개인/법인 구분</label>
+                            </p>
+                            <select class="select type02" id="s04">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i04">업등록번호</label>
+                            </p>
+                            <input type="text" placeholder="예:00-0000" style="width: 140px;" id="i04"/>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i05">주대표자주민번호</label>
+                            </p>
+                            <input type="text" placeholder="'-'를 빼고 입력하세요." style="width: 140px;" id="i05"/>
+                        </div> 
+                    </div>
+                    <!-- //col -->
+                     <!-- col -->
+                     <div class="col">
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="s05">업종</label>
+                            </p>
+                            <select class="select type02" id="s05">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name txt-left">
+                                <label for="s06">분점/지점 구분</label>
+                            </p>
+                            <select class="select type02" id="s06">
+                                <option>선택</option>
+                            </select>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i06">(구)업등록번호</label>
+                            </p>
+                            <input type="text" style="width: 140px;" id="i06"/>
+                        </div>
+                        <div class="selectList">
+                            <p class="name">
+                                <label for="i07">법인번호</label>
+                            </p>
+                            <input type="text" placeholder="'-'를 빼고 입력하세요." style="width: 140px;" id="i07"/>
+                        </div> 
+                    </div>
+                    <!-- //col -->
+                </div>
+                <!-- //codeSelect -->
+
+                <!-- btnArea -->
+                <div class="btnArea">
+                    <div class="center">
+                        <button class="btnMember">재설정</button>
+                        <button class="btnMember">검색</button>
+                    </div>
+                </div>
+                <!-- //btnArea -->
+
+                <hr class="hrLine"/>
+
+                <!-- table -->
+                <div class="table overflow-xy" style="height: 500px;">
+                    <table style="width: 1000px;">
+                        <caption>업체 기본관리 테이블</caption>
+                        <colgroup>
+                            <col style="width: 87px;"/>
+                            <col style="width: 98px;"/>
+                            <col style="width: 117px;"/>
+                            <col style="width: 103px;"/>
+                            <col style="width: 87px;"/>
+                            <col style="width: 87px;"/>
+                            <col style="width: 120px;"/>
+                            <col style="width: 87px;"/>
+                            <col style="width: 91px;"/>
+                            <col style="width: auto;">
+                        </colgroup>
+                        <thead>
+                            <tr class="txt-left">
+                                <th scope="col" class="align">업체코드</th>
+                                <th scope="col" class="align">업등록번호</th>
+                                <th scope="col" class="align">(구)업등록번호</th>
+                                <th scope="col" class="align">시도/시군구</th>
+                                <th scope="col" class="align">업체 코드</th>
+                                <th scope="col" class="align">업종</th>
+                                <th scope="col" class="align">업체 이름</th>
+                                <th scope="col" class="align">대표자명</th>
+                                <th scope="col" class="align">개인/법인</th>
+                                <th scope="col">&nbsp;</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+                            
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+
+                            <tr>
+                                <td></td>
+                                <td>01-000008</td>
+                                <td>01-1035</td>
+                                <td>경기도</td>
+                                <td>6697</td>
+                                <td>지하시설측량</td>
+                                <td>(주)서일엔지닝어링</td>
+                                <td>김화경</td>
+                                <td>법인</td>
+                                <td>내용</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+                <!--btnArea-->
+                <div class="btnArea">
+                    <div class="right">
+                        <button class="btnMember"><span>엑셀 다운로드</span></button>
+                    </div>
+                </div>
+                <!--//btnArea-->
+                <!-- pagaination -->
+                <div class="pagination">
+                    <button type="button" class="btnPagi prev"></button>
+                    <a href="#" class="active">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#">7</a>
+                    <a href="#">8</a>
+                    <a href="#">9</a>
+                    <button type="button" class="btnPagi next"></button>
+                </div>
+                <!-- //pagaination -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>

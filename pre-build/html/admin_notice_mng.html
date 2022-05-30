@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    @@include('include/head.html')
+</head>
+<body>
+<!--accNav-->
+<div class="accNav">
+    <a href="#gnb">주요 바로가기</a>
+    <a href="#lnb">보조메뉴 바로가기</a>
+    <a href="#container">메인콘텐츠 바로가기</a>
+    <a href="#footer">하단메뉴 바로가기</a>
+</div>
+<!--//accNav-->
+<div id="wrap">
+    <!--header-->
+    <div id="header">
+        <!--siteTitle-->
+        <div class="siteTitle">
+            <h1><img src="../images/common/kasm_logo.png" alt="공간정보산업협회"></h1>
+            <!--util-->
+            <div class="util">
+                <a href="/">로그인</a>
+            </div>
+            <!--//util-->
+        </div>
+        <!--//siteTitle-->
+        <!--gnb-->
+        <div id="gnb">
+            <!--menu-->
+            <div class="menu">
+                <ul>
+                    <li><a href="/">게시판 관리</a></li>
+                    <li><a href="/">회원관리</a></li>
+                    <li><a href="/">회비관리</a></li>
+                    <li><a href="/">교육관리</a></li>
+                    <li><a href="/">시스템관리</a></li>
+                </ul>
+            </div>
+            <!--//menu-->
+        </div>
+        <!--//gnb-->
+    </div>
+    <!--//header-->
+    <!-- container -->
+    <div id="container">
+        <!-- contents -->
+        <div id="contents">
+            <!-- lnb -->
+            @@include('include/lnb.html')
+            <!-- //lnb -->
+            <!-- content -->
+            <div id="content">
+                <h2 class="hidden">본문시작</h2>
+                <h3 class="title">공지사항 관리</h3>
+                <div class="btnFuncArea">
+                    <button class="btn etc"><span>삭제</span></button>
+                    <button class="btn confirm"><span>등록</span></button>
+                </div>
+
+                <!-- codeSelect -->
+                <div class="codeSelect">
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="s01">상단출력</label>
+                        </p>
+                        <select class="select type02" id="s01">
+                            <option>미출력</option>
+                        </select>
+                    </div>
+                    <!-- //selectList -->
+                    <!-- selectList -->
+                    <div class="selectList">
+                        <p class="name">
+                            <label for="s02">구분</label>
+                        </p>
+                        <select class="select type02" id="s02">
+                            <option label="제목"></option>
+                        </select>
+                        <label>
+                            <input type="text" class="default" placeholder="검색어를 입력하세요">
+                        </label>
+                    </div>
+                    <!-- //selectList -->
+                    <button class="btnMember right">검색</button>
+                </div>
+                <!-- //codeSelect -->
+
+                <!-- table -->
+                <div class="table overflow-xy" style="height: 500px;">
+                    <table style="width: 1000px;">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk01" class="hidden">
+                                        <label for="chk01"></label>
+                                    </div>
+                                </th>
+                                <th scope="col">번호</th>
+                                <th scope="col">제목</th>
+                                <th scope="col">조회수</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일시</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk02" class="hidden">
+                                        <label for="chk02"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>현장 규제에로 사항 발굴 관련 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk03" class="hidden">
+                                        <label for="chk03"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>지적재조사 책임수행기관 운영규정(고시) 제정안 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk04" class="hidden">
+                                        <label for="chk04"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>2021년도 제1차 임시총회 개최 공고</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk05" class="hidden">
+                                        <label for="chk05"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>공간정보산업협회 감사 선거 후보자 등록 현황 공고</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk06" class="hidden">
+                                        <label for="chk06"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>건설기술안의 등급 신정 및 경력인정방법 등 (제 5조 관련) 일부개정 알림</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk07" class="hidden">
+                                        <label for="chk07"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>공간정보산업협회 감사 선거 재공고</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk08" class="hidden">
+                                        <label for="chk08"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>건설 및 측량기술경력증 효력상실 공고 (21년 3월 대상자)</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk09" class="hidden">
+                                        <label for="chk09"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>공간정보산업협회 감사 선거 선거인 명부 확정 및 열람 재공고</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk10" class="hidden">
+                                        <label for="chk10"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>공간정보산업협회 기간제근로자(행정사무) 채용공고</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk11" class="hidden">
+                                        <label for="chk11"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>현장 규제에로 사항 발굴 관련 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk12" class="hidden">
+                                        <label for="chk12"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>현장 규제에로 사항 발굴 관련 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk13" class="hidden">
+                                        <label for="chk13"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>현장 규제에로 사항 발굴 관련 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                            <tr>
+                                <td class="txt-center">
+                                    <div class="checkBox">
+                                        <input type="checkBox" id="chk14" class="hidden">
+                                        <label for="chk14"></label>
+                                    </div>
+                                </td>
+                                <td>32691</td>
+                                <td>현장 규제에로 사항 발굴 관련 의견조회</td>
+                                <td>22</td>
+                                <td>관리자</td>
+                                <td>2021-05-06 14:13:28</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- //table -->
+
+            </div>
+            <!-- //content -->
+        </div>
+        <!-- //contents -->
+    </div>
+    <!-- //container -->
+    <div id="footer">
+        <p>COPYRIGHT (C) KOREAN ASSOCIATION OF SURVERYING & MAPPING. ALL RIGHTS RESERVED.</p>
+    </div>
+</div>
+</body>
+</html>
